@@ -1,3 +1,8 @@
+Object.prototype.Copy = function (obj0, obj1) {
+    for (var key in obj1) {
+        obj0[key] = obj1[key];
+    }
+}
 function Tab(json) {
     this.setting = {
         Style: 'Default',
