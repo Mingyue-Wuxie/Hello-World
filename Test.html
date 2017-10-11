@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Component.css">
+    <script src="Component.js"></script>
+    <script>
+        Object.prototype.Copy = function (obj0, obj1) {
+            for (var key in obj1) {
+                obj0[key] = obj1[key];
+            }
+        }
+        window.onload = function () {
+            new Tab({
+                id: 'tab'
+            });
+
+            var json = {//默认参数
+                Style: 'Default',//样式
+                Direction: 'Horizontal',//方向水平  Vertical方向垂直，当前还没有垂直
+                Tabs: [],//选项卡内容，默认空白
+                Cards: 'li',//各个卡片的标签名
+                Event: 'hover'//鼠标划过事件  click点击事件
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="tab" card='Card'>
+        <ul id="Card">
+            <li>第一栏</li>
+            <li>第二栏</li>
+            <li>第三栏</li>
+            <li>第四栏</li>
+            <li>第五栏</li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.tab {
+    display: inline-block;
+}
+
+.tab ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.tabs{
+    overflow: hidden;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.tabs li {
+    float: left;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 70px;
+    margin: -1px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid white;
+}
+
+.tabs li.active, .tabs li:hover {
+    border: 1px solid black;
+}
+
+.card {
+    width: 100%;
+}
+
+.card li {
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: none;
+}
+
+.card li.active{
+    display: block;
+}
